@@ -1,0 +1,239 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: white;
+}
+
+.everything-everywhere {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.printcapsuo-logo {
+  width: auto;
+  height: 130px;
+  border-radius: 75px;
+  margin: 10px 0;
+}
+
+nav {
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 16px;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+  margin: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#active {
+  background-color: #65c2d4;
+  color: white;
+  padding: 0 4px;
+}
+
+.styled-break {
+  height: 1px;
+  background-color: pink;
+  margin: 20px 20px;
+}
+
+.intro-box {
+  margin: 10px;
+}
+
+.featured-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.featured-img {
+  height: auto;
+  width: 100%;
+  max-width: 350px;
+  margin: 10px 10px;
+}
+
+.title {
+  align-self: center;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.event-section {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.event-containers {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+.event-img {
+  height: auto;
+  width: 100%;
+  max-width: 350px;
+}
+
+.minior {
+  height: auto;
+  width: 100%;
+  max-width: 120px;
+  margin-top: 20px;
+}
+
+/* Want to learn how to scale these grey "event cards" Don't be lazy, just do it! */
+
+.event-card {
+  width: 300px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  margin: 5px 3px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.event-data {
+  width: 200px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.22rem;
+  line-height: 1.3rem;
+  margin: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: whitesmoke;
+}
+
+.date {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: white;
+  font-family: "Share Tech Mono", monospace;
+  margin-right: 10px;
+  margin-left: 5px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+/* banner  allows me to centre the whole thing without centreing the "newsletter" title */
+
+.banner-section {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* banner-section keeps banner-section-top and banner-section-bot together, in a column, and aligned to the left */
+
+.banner-title {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.blurb {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.banner-section-bot {
+  margin-left: 8px;
+  display: flex;
+}
+
+#email {
+  border-radius: 10px;
+  color: #000000;
+  border: 1px solid #dbdbdb;
+  font-family: "Quicksand", sans-serif;
+  width: 200px;
+  height: 20px;
+  font-size: 16px;
+}
+
+#email:focus {
+  outline: 1px solid #65c2d4;
+}
+
+.subscribe {
+  background-color: white;
+  border-radius: 10px;
+  color: #000000;
+  border: 1px solid #dbdbdb;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+.subscribe:hover {
+  background-color: white;
+  border-color: #65c2d4;
+  color: #65c2d4;
+}
+
+.fa-solid fa-plus {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  margin: 20px;
+}
+
+.fa-solid {
+  font-size: 20px;
+  margin: 0 8px;
+}
+
+.fa-brands {
+  font-size: 20px;
+  margin: 0 8px;
+}
+
+a:hover {
+  color: #65c2d4;
+}
