@@ -14,3 +14,6 @@ It's been a while. So with 3 days left, I'm going to be realistic with my time. 
 
 Later on 05 May 2022:
 I didn't get to the contact form... Will do it on Saturday.
+
+06 May 2022:
+Removed contact page, wanted to try a link on the same page. Also means if someone is scrolling, they'll see the contact form at the bottom of the home page.
