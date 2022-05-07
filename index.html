@@ -18,6 +18,8 @@
   </head>
 
   <body>
+    <a id="top"></a>    
+    
     <div class="everything-everywhere">
 
       <div class="logo-header">
@@ -123,19 +125,48 @@
     <div class="styled-break"></div>
     
       <div class="title" id="contact">contact</div>
+      <div class="contact-form">
       <form id="contactform">
-        <label for="fname">First Name:</label>
+        <div class="input-section">
+        <label class="textform" for="fname">First Name:</label>
         <input type="text" id="fname" name="fname">
-        <label for="lname">Last Name:</label>
+        </div>
+        <div class="input-section">
+        <label class="textform" for="lname">Last Name:</label>
         <input type="text" id="lname" name="lname">
-        <label for="lname">Email:</label>
+        </div>
+
+        <div class="input-section">
+        <label class="textform" for="email">Email:</label>
         <input type="email" id="email" name="email">
-        <label for="Message">Message:</label>
-        <textarea name="message" form="contactform">Enter text here...</textarea>
+        </div>
+
+        <div class="input-section">
+        <div class="checkbox">
+        <label for="collaboration">
+          <input type ="checkbox" id="collaboration" name="collaboration">Collaboration</label>
+        </div>
+        <div class="checkbox">
+          <label for="commission">
+        <input type ="checkbox" id="commission" name="commission">Commission</label>
+          </div>
+          <div class="checkbox">
+        <label for="other">
+          <input type ="checkbox" id="other" name="other">Other</label>
+        </div>
+        </div>
+
+        <div class="input-section">
+        <textarea name="message" form="contactform" class="message" placeholder="Enter your message here..."></textarea>
+        </div>
+
+        <input class="submit-form" id="submit-form" type="submit" name="submit-form" value="submit">
       </form>  
+    </div>
 
     <div class="styled-break"></div>
-
+    <a class="backtotop" href="#top">Back to top ↑</a>
+    
     <footer>
       <p></p>
       <p><u><a href="#">Privacy Policy</a></u></p>
@@ -145,6 +176,8 @@
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
       </div>
     </footer>
+
+
 
   </div>
   </body>

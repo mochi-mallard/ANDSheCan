@@ -17,3 +17,10 @@ I didn't get to the contact form... Will do it on Saturday.
 
 06 May 2022:
 Removed contact page, wanted to try a link on the same page. Also means if someone is scrolling, they'll see the contact form at the bottom of the home page.
+
+07 May 2022:
+Lots done today. The flexbox and responsiveness of About page was hard and I got it in the end! It's looking good. Mistake I made early on was trying to set the height:auto; and width:100% for a div. Forgot it was for images. Read stackoverflow forum and realised why my image kept disappearing. Had a go at a media query on the About page too! If I have time, I'll do the same for the homepage.
+
+Also sorted out my contact form, really happy with how those form fields turned out. So cool how I could change the colour of the outlines on focus.
+
+Added a "Back to top" link on the homepage.

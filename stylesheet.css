@@ -3,11 +3,14 @@ body {
   background-color: white;
 }
 
+/* I can't remember why I added this but I do know that when I remove this div, it really messes up the page! */
+
 .everything-everywhere {
   display: flex;
   flex-direction: column;
 }
 
+/* Logo and Nav Section */
 .logo-header {
   display: flex;
   align-items: center;
@@ -33,6 +36,7 @@ li {
   margin: 0 20px;
 }
 
+/* Link stuff */
 a {
   text-decoration: none;
   color: black;
@@ -44,56 +48,77 @@ a {
   padding: 0 4px;
 }
 
+/* Break lines */
 .styled-break {
   height: 1px;
   background-color: pink;
   margin: 20px 20px;
 }
 
+/* Intro text */
 .intro-box {
   margin: 10px;
 }
 
+/* Featured collection section */
 .featured-gallery {
+  height: auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
+/* Not sure why my margins weren't working when the max-width was set to 100% */
 .featured-img {
   height: auto;
-  width: 100%;
-  max-width: 350px;
-  margin: 10px 10px;
+  max-width: 95%;
+  margin: 5px;
 }
 
+@media (max-width: 767px) {
+  .featured-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Section titles */
 .title {
   align-self: center;
   text-decoration: underline;
   font-size: 20px;
 }
 
+/* Upcoming events */
 .event-section {
-  background-color: white;
+
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  margin: 20px;
+
+  /* background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .event-containers {
-  width: 350px;
+  /* width: 350px;
   height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 10px;
+  margin: 10px; */
 }
 
 .event-img {
   height: auto;
-  width: 100%;
-  max-width: 350px;
+  max-width: 95%;
+  margin: 5px;
 }
 
 .minior {
@@ -102,8 +127,6 @@ a {
   max-width: 120px;
   margin-top: 20px;
 }
-
-/* Want to learn how to scale these grey "event cards" Don't be lazy, just do it! */
 
 .event-card {
   width: 300px;
@@ -145,6 +168,13 @@ a {
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .event-img {
+    visibility: hidden;
+    height: 0;
+  }
+
+/* Newsletter */
 .banner {
   display: flex;
   justify-content: center;
@@ -153,7 +183,6 @@ a {
 }
 
 /* banner  allows me to centre the whole thing without centreing the "newsletter" title */
-
 .banner-section {
   height: auto;
   display: flex;
@@ -162,7 +191,6 @@ a {
 }
 
 /* banner-section keeps banner-section-top and banner-section-bot together, in a column, and aligned to the left */
-
 .banner-title {
   font-size: 18px;
   font-weight: bold;
@@ -179,6 +207,7 @@ a {
   display: flex;
 }
 
+/* emails inc newsletter + form */
 #email {
   border-radius: 10px;
   color: #000000;
@@ -208,6 +237,83 @@ a {
   color: #65c2d4;
 }
 
+/* Contact Form */
+.contact-form {
+  align-self: center;
+  margin: 10px;
+}
+
+.input-section {
+  margin: 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  color: #000000;
+  border: 1px solid #dbdbdb;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+.message:focus {
+  outline: 1px solid #65c2d4;
+}
+
+#fname {
+  border-radius: 10px;
+  color: #000000;
+  border: 1px solid #dbdbdb;
+  font-family: "Quicksand", sans-serif;
+  width: 200px;
+  height: 20px;
+  font-size: 16px;
+}
+
+#fname:focus {
+  outline: 1px solid #65c2d4;
+}
+
+#lname {
+  border-radius: 10px;
+  color: #000000;
+  border: 1px solid #dbdbdb;
+  font-family: "Quicksand", sans-serif;
+  width: 200px;
+  height: 20px;
+  font-size: 16px;
+}
+
+#lname:focus {
+  outline: 1px solid #65c2d4;
+}
+
+.submit-form {
+  background-color: white;
+  border-radius: 10px;
+  color: #000000;
+  border: 1px solid #dbdbdb;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.submit-form:hover {
+  background-color: white;
+  border-color: #65c2d4;
+  color: #65c2d4;
+}
+
+/* aligns the text inputs */
+.textform {
+  width: 100px;
+  display: inline-block;
+}
+
+/* Footer */
 .fa-solid fa-plus {
   margin-left: 5px;
   margin-right: 5px;
@@ -224,6 +330,7 @@ footer {
   margin: 20px;
 }
 
+/* controls the newletter icon and the envelope at the bottom. seems fine for now. */
 .fa-solid {
   font-size: 20px;
   margin: 0 8px;
@@ -236,4 +343,47 @@ footer {
 
 a:hover {
   color: #65c2d4;
+}
+
+.backtotop {
+  text-align: right;
+  margin-right: 30px;
+  font-size: 16px;
+}
+
+/* CSS for About page */
+
+.aboutsection {
+  display: flex;
+
+  margin: 20px;
+  justify-content: center;
+}
+
+.about-img {
+  height: auto;
+  width: 100%;
+  margin: 10px;
+}
+
+.about-text {
+  width: 400px;
+  margin: 10px 30px;
+  text-align: justify;
+}
+
+@media (max-width: 767px) {
+  .aboutsection {
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .about-text {
+    width: 400px;
+    text-align: justify;
+    min-width: 200px;
+  }
 }
