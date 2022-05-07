@@ -24,3 +24,7 @@ Lots done today. The flexbox and responsiveness of About page was hard and I got
 Also sorted out my contact form, really happy with how those form fields turned out. So cool how I could change the colour of the outlines on focus.
 
 Added a "Back to top" link on the homepage.
+
+For a looong time, I couldn't figure out why I couldn't get the "upcoming events" info to scale with the browser getting smaller... It was because of "white-space: nowrap;".
+
+Home images are a bit off-centre and not aligned precisely. I'm happy that they can scale with the browser changing size though :') Having fun with media queries today!

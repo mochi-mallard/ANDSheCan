@@ -72,7 +72,7 @@ a {
 /* Not sure why my margins weren't working when the max-width was set to 100% */
 .featured-img {
   height: auto;
-  max-width: 95%;
+  max-width: 90%;
   margin: 5px;
 }
 
@@ -92,87 +92,94 @@ a {
 }
 
 /* Upcoming events */
+.TEST {
+  align-content: center;
+}
+
 .event-section {
-
-  height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 20px;
-
-  /* background-color: white;
-  display: flex;
   justify-content: center;
-  align-items: center; */
 }
 
 .event-containers {
-  /* width: 350px;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px; */
+  width: 100%;
+  max-width: 400px;
+  /* height: 400px; */
+  margin: 10px 20px;
+  /* background-color: greenyellow; */
+  align-content: center;
+  min-width: 250px;
 }
 
 .event-img {
   height: auto;
   max-width: 95%;
-  margin: 5px;
-}
-
-.minior {
-  height: auto;
-  width: 100%;
-  max-width: 120px;
-  margin-top: 20px;
 }
 
 .event-card {
-  width: 300px;
-  height: 60px;
+  max-width: 100%;
   border-radius: 10px;
   background-color: whitesmoke;
   margin: 5px 3px;
   display: flex;
-  justify-content: left;
   align-items: center;
 }
 
 .event-data {
-  width: 200px;
   border-radius: 10px;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.22rem;
   line-height: 1.3rem;
   margin: 5px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
   background-color: whitesmoke;
 }
 
 .date {
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   border-radius: 10px;
   background-color: white;
   font-family: "Share Tech Mono", monospace;
-  margin-right: 10px;
-  margin-left: 5px;
+  margin: 10px;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
-@media (max-width: 767px) {
+.fa-solid fa-plus {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media (max-width: 600px) {
   .event-img {
     visibility: hidden;
     height: 0;
   }
+}
+
+@media (max-width: 1100px) {
+  .event-data {
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.22rem;
+    line-height: 1.3rem;
+    margin: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: whitesmoke;
+  }
+}
 
 /* Newsletter */
 .banner {
@@ -188,6 +195,21 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+@media (max-width: 550px) {
+  .banner-section-bot {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner {
+    height: 100px;
+  }
+
+  .cramorant {
+    visibility: hidden;
+    height: 0;
+  }
 }
 
 /* banner-section keeps banner-section-top and banner-section-bot together, in a column, and aligned to the left */
@@ -314,10 +336,6 @@ a {
 }
 
 /* Footer */
-.fa-solid fa-plus {
-  margin-left: 5px;
-  margin-right: 5px;
-}
 
 footer {
   display: flex;
@@ -355,7 +373,6 @@ a:hover {
 
 .aboutsection {
   display: flex;
-
   margin: 20px;
   justify-content: center;
 }
@@ -375,7 +392,6 @@ a:hover {
 @media (max-width: 767px) {
   .aboutsection {
     display: flex;
-
     justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
