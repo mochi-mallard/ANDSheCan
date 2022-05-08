@@ -31,3 +31,6 @@ Home images are a bit off-centre and not aligned precisely. I'm happy that they 
 
 08 May 2022:
 Good god, learned how to get the images to zoom in on hover. This is seriously cool. Add a card in Notion.
+
+I feel grateful for this AND bootcamp. I think it gave me a push to get on with this because of the project submission.
+I feel proud of what I've done, I could add so much more--links to the gallery, more media query stuff. For now. I'm ahppy with it! Time to submit this.
