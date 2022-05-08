@@ -197,13 +197,22 @@ a {
   align-items: flex-start;
 }
 
+.banner-section-top {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 550px) {
   .banner-section-bot {
     display: flex;
     flex-direction: column;
   }
+
   .banner {
     height: 100px;
+  }
+
+  .blurb {
+    margin-bottom: 8px;
   }
 
   .cramorant {
@@ -402,4 +411,16 @@ a:hover {
     text-align: justify;
     min-width: 200px;
   }
+}
+
+/* CSS for Art page */
+
+.hero-section {
+  background-color: pink;
+  height: 100px;
+  width: 100%;
+}
+
+.container {
+  width: 20%;
 }
